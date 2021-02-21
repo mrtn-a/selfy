@@ -217,6 +217,9 @@ body {
 
 	.home-banner h1 {
 		font-size: 2.7rem;
+		margin-right: 7px;
+    margin-left: 7px;
+    margin-bottom: 40px;
 	}
 
 	.home-banner h3 {
@@ -302,6 +305,16 @@ body {
 	.b-color {
 		padding-bottom: 40px;
 		padding-top: 2rem;
+		margin-top: -1rem;
+	}
+
+	.background-shape {
+		top: 110px;
+		height: 510px;
+	}
+
+	.box i {
+		left: 128px;
 	}
 }
 
