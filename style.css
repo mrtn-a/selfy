@@ -209,7 +209,7 @@ body {
 /*small screen*/
 @media only screen and (max-width: 768px) {
 	.text-banner {
-    margin-top: 10vh;
+    margin-top: 9vh;
 	}
 	.navbar {
 		padding: 10px;
@@ -219,12 +219,13 @@ body {
 		font-size: 2.5rem;
 		margin-right: 7px;
     margin-left: 7px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 	}
 
 	.home-banner h3 {
     font-size: 1.5rem;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 40px;
 	}
 
 	.btn-gradient {
