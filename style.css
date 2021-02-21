@@ -158,12 +158,14 @@ body {
 	height: 55vh;
 	background-color: #465b64;
 }
+
 .banner-tech h2 {
 	color: #fff;
 	font-size: 3rem;
 	font-weight: 400;
 	letter-spacing: 1px;
 }
+
 .banner-tech h4 {
 	color: var(--green-color);
 	margin-bottom: 40px;
@@ -201,5 +203,118 @@ body {
 	position: absolute;
 	top: 70px;
 	z-index: -1;
+}
+
+
+/*small screen*/
+@media only screen and (max-width: 768px) {
+	.text-banner {
+    margin-top: 10vh;
+	}
+	.navbar {
+		padding: 10px;
+	}
+
+	.home-banner h1 {
+		font-size: 2.7rem;
+		margin-right: 7px;
+    margin-left: 7px;
+    margin-bottom: 40px;
+	}
+
+	.home-banner h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+	}
+
+	.btn-gradient {
+		min-width: 90%;
+	}
+
+	.home-banner {
+		height: 100%;
+	}
+
+	.carousel-inner > .carousel-item > img {
+    height: 450px !important;
+	}
+
+	.pt-10 {
+    padding-top: 5vh;
+	}
+
+	.box {
+		height: 100%;
+	}
+
+	.home-banner {
+		height: 100%;
+
+	}
+	.banner-tech {
+		padding-top: 8vh;
+    padding-bottom: 8vh;
+		height: 100%;
+	}
+	.description {
+		height: 100%;
+	}
+
+	.svg {
+		width: 90%;
+	}
+
+	.description h2 {
+		line-height: 1.4;
+		font-size: 2rem;
+	}
+
+	.banner-tech h2 {
+		font-size: 2.5rem;
+		font-weight: 400;
+    margin-bottom: 4vh;
+	}
+
+	.footer {
+		height: 15vh;
+	}
+	.small {
+    font-size: 0.8rem;
+    margin-top: 1vh;
+  }
+  .m-flex {
+		align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .m-p0 {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+	}
+
+	.m-d-block {
+		display: block !important;
+	}
+
+	.box {
+		width: auto;
+		margin-top: 4vh;
+	}
+
+	.b-color {
+		padding-bottom: 40px;
+		padding-top: 2rem;
+		margin-top: -1rem;
+	}
+
+	.background-shape {
+		top: 110px;
+		height: 510px;
+	}
+
+	.box i {
+		left: 128px;
+	}
 }
 
