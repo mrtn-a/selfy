@@ -215,9 +215,6 @@ body {
 		padding: 10px;
 	}
 
-	.logo {
-		margin: 0 auto;
-	}
 	.home-banner h1 {
 		font-size: 2.7rem;
 	}
@@ -291,6 +288,20 @@ body {
   .m-p0 {
     margin-top: 3vh;
     margin-bottom: 3vh;
+	}
+
+	.m-d-block {
+		display: block !important;
+	}
+
+	.box {
+		width: auto;
+		margin-top: 4vh;
+	}
+
+	.b-color {
+		padding-bottom: 40px;
+		padding-top: 2rem;
 	}
 }
 
