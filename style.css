@@ -252,7 +252,8 @@ body {
 
 	}
 	.banner-tech {
-
+		padding-top: 8vh;
+    padding-bottom: 8vh;
 		height: 100%;
 	}
 	.description {
@@ -261,6 +262,35 @@ body {
 
 	.svg {
 		width: 90%;
+	}
+
+	.description h2 {
+		line-height: 1.4;
+		font-size: 2rem;
+	}
+
+	.banner-tech h2 {
+		font-size: 2.5rem;
+		font-weight: 400;
+    margin-bottom: 4vh;
+	}
+
+	.footer {
+		height: 15vh;
+	}
+	.small {
+    font-size: 0.8rem;
+    margin-top: 1vh;
+  }
+  .m-flex {
+		align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .m-p0 {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 	}
 }
 
