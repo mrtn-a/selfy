@@ -158,12 +158,14 @@ body {
 	height: 55vh;
 	background-color: #465b64;
 }
+
 .banner-tech h2 {
 	color: #fff;
 	font-size: 3rem;
 	font-weight: 400;
 	letter-spacing: 1px;
 }
+
 .banner-tech h4 {
 	color: var(--green-color);
 	margin-bottom: 40px;
@@ -232,4 +234,33 @@ body {
 	.home-banner {
 		height: 100%;
 	}
+
+	.carousel-inner > .carousel-item > img {
+    height: 450px !important;
+	}
+
+	.pt-10 {
+    padding-top: 5vh;
+	}
+
+	.box {
+		height: 100%;
+	}
+
+	.home-banner {
+		height: 100%;
+
+	}
+	.banner-tech {
+
+		height: 100%;
+	}
+	.description {
+		height: 100%;
+	}
+
+	.svg {
+		width: 90%;
+	}
 }
+
