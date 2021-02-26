@@ -1,166 +1,199 @@
-<div id="smart-button-container">
-  <div style="text-align: center">
-    <label for="description">Name </label
-    ><input
-      type="text"
-      name="descriptionInput"
-      id="description"
-      maxlength="127"
-      value=""
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
     />
-  </div>
-  <p
-    id="descriptionError"
-    style="visibility: hidden; color: red; text-align: center"
-  >
-    Please enter a description
-  </p>
-  <div style="text-align: center">
-    <label for="amount">Amount </label
-    ><input name="amountInput" type="number" id="amount" value="" /><span>
-      USD</span
-    >
-  </div>
-  <p
-    id="priceLabelError"
-    style="visibility: hidden; color: red; text-align: center"
-  >
-    Please enter a price
-  </p>
-  <div id="invoiceidDiv" style="text-align: center; display: none">
-    <label for="invoiceid"> </label
-    ><input
-      name="invoiceid"
-      maxlength="127"
-      type="text"
-      id="invoiceid"
-      value=""
-    />
-  </div>
-  <p
-    id="invoiceidError"
-    style="visibility: hidden; color: red; text-align: center"
-  >
-    Please enter an Invoice ID
-  </p>
-  <div
-    style="text-align: center; margin-top: 0.625rem"
-    id="paypal-button-container"
-  ></div>
-</div>
-<script
-  src="https://www.paypal.com/sdk/js?client-id=AcUG4bNLusl9TeiG2CyBBo8FQvqsO8Vg8eBXAHzoW43kvseWCrgk220a7pX12pUTDMYAffGh2czwhxV9&currency=USD"
-  data-sdk-integration-source="button-factory"
-></script>
-<script>
-  function initPayPalButton() {
-    var description = document.querySelector(
-      "#smart-button-container #description"
-    );
-    var amount = document.querySelector("#smart-button-container #amount");
-    var descriptionError = document.querySelector(
-      "#smart-button-container #descriptionError"
-    );
-    var priceError = document.querySelector(
-      "#smart-button-container #priceLabelError"
-    );
-    var invoiceid = document.querySelector(
-      "#smart-button-container #invoiceid"
-    );
-    var invoiceidError = document.querySelector(
-      "#smart-button-container #invoiceidError"
-    );
-    var invoiceidDiv = document.querySelector(
-      "#smart-button-container #invoiceidDiv"
-    );
+    <link rel="stylesheet" href="style.css" />
+    <title>Selfy DSP Payment Page</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar">
+      <div class="logo m-auto">
+        <h4>
+          <a href="#">
+            <img
+              src="images/selfydsp-logo-horizontal-transparent.png"
+              alt="Selfy DSP"
+          /></a>
+        </h4>
+      </div>
+    </div>
 
-    var elArr = [description, amount];
+    <div id="smart-button-container">
+      <div style="text-align: center">
+        <label for="description">Name </label
+        ><input
+          type="text"
+          name="descriptionInput"
+          id="description"
+          maxlength="127"
+          value=""
+        />
+      </div>
+      <p
+        id="descriptionError"
+        style="visibility: hidden; color: red; text-align: center"
+      >
+        Please enter a description
+      </p>
+      <div style="text-align: center">
+        <label for="amount">Amount </label
+        ><input name="amountInput" type="number" id="amount" value="" /><span>
+          USD</span
+        >
+      </div>
+      <p
+        id="priceLabelError"
+        style="visibility: hidden; color: red; text-align: center"
+      >
+        Please enter a price
+      </p>
+      <div id="invoiceidDiv" style="text-align: center; display: none">
+        <label for="invoiceid"> </label
+        ><input
+          name="invoiceid"
+          maxlength="127"
+          type="text"
+          id="invoiceid"
+          value=""
+        />
+      </div>
+      <p
+        id="invoiceidError"
+        style="visibility: hidden; color: red; text-align: center"
+      >
+        Please enter an Invoice ID
+      </p>
+      <div
+        style="text-align: center; margin-top: 0.625rem"
+        id="paypal-button-container"
+      ></div>
+    </div>
+    <script
+      src="https://www.paypal.com/sdk/js?client-id=AcUG4bNLusl9TeiG2CyBBo8FQvqsO8Vg8eBXAHzoW43kvseWCrgk220a7pX12pUTDMYAffGh2czwhxV9&currency=USD"
+      data-sdk-integration-source="button-factory"
+    ></script>
+    <script>
+      function initPayPalButton() {
+        var description = document.querySelector(
+          "#smart-button-container #description"
+        );
+        var amount = document.querySelector("#smart-button-container #amount");
+        var descriptionError = document.querySelector(
+          "#smart-button-container #descriptionError"
+        );
+        var priceError = document.querySelector(
+          "#smart-button-container #priceLabelError"
+        );
+        var invoiceid = document.querySelector(
+          "#smart-button-container #invoiceid"
+        );
+        var invoiceidError = document.querySelector(
+          "#smart-button-container #invoiceidError"
+        );
+        var invoiceidDiv = document.querySelector(
+          "#smart-button-container #invoiceidDiv"
+        );
 
-    var purchase_units = [];
-    purchase_units[0] = {};
-    purchase_units[0].amount = {};
+        var elArr = [description, amount];
 
-    function validate(event) {
-      return event.value.length > 0;
-    }
+        var purchase_units = [];
+        purchase_units[0] = {};
+        purchase_units[0].amount = {};
 
-    paypal
-      .Buttons({
-        style: {
-          color: "blue",
-          shape: "rect",
-          label: "paypal",
-          layout: "vertical",
-        },
+        function validate(event) {
+          return event.value.length > 0;
+        }
 
-        onInit: function (data, actions) {
-          actions.disable();
+        paypal
+          .Buttons({
+            style: {
+              color: "blue",
+              shape: "rect",
+              label: "paypal",
+              layout: "vertical",
+            },
 
-          if (invoiceidDiv.style.display === "block") {
-            elArr.push(invoiceid);
-          }
+            onInit: function (data, actions) {
+              actions.disable();
 
-          elArr.forEach(function (item) {
-            item.addEventListener("keyup", function (event) {
-              var result = elArr.every(validate);
-              if (result) {
-                actions.enable();
-              } else {
-                actions.disable();
+              if (invoiceidDiv.style.display === "block") {
+                elArr.push(invoiceid);
               }
-            });
-          });
-        },
 
-        onClick: function () {
-          if (description.value.length < 1) {
-            descriptionError.style.visibility = "visible";
-          } else {
-            descriptionError.style.visibility = "hidden";
-          }
+              elArr.forEach(function (item) {
+                item.addEventListener("keyup", function (event) {
+                  var result = elArr.every(validate);
+                  if (result) {
+                    actions.enable();
+                  } else {
+                    actions.disable();
+                  }
+                });
+              });
+            },
 
-          if (amount.value.length < 1) {
-            priceError.style.visibility = "visible";
-          } else {
-            priceError.style.visibility = "hidden";
-          }
+            onClick: function () {
+              if (description.value.length < 1) {
+                descriptionError.style.visibility = "visible";
+              } else {
+                descriptionError.style.visibility = "hidden";
+              }
 
-          if (
-            invoiceid.value.length < 1 &&
-            invoiceidDiv.style.display === "block"
-          ) {
-            invoiceidError.style.visibility = "visible";
-          } else {
-            invoiceidError.style.visibility = "hidden";
-          }
+              if (amount.value.length < 1) {
+                priceError.style.visibility = "visible";
+              } else {
+                priceError.style.visibility = "hidden";
+              }
 
-          purchase_units[0].description = description.value;
-          purchase_units[0].amount.value = amount.value;
+              if (
+                invoiceid.value.length < 1 &&
+                invoiceidDiv.style.display === "block"
+              ) {
+                invoiceidError.style.visibility = "visible";
+              } else {
+                invoiceidError.style.visibility = "hidden";
+              }
 
-          if (invoiceid.value !== "") {
-            purchase_units[0].invoice_id = invoiceid.value;
-          }
-        },
+              purchase_units[0].description = description.value;
+              purchase_units[0].amount.value = amount.value;
 
-        createOrder: function (data, actions) {
-          return actions.order.create({
-            purchase_units: purchase_units,
-          });
-        },
+              if (invoiceid.value !== "") {
+                purchase_units[0].invoice_id = invoiceid.value;
+              }
+            },
 
-        onApprove: function (data, actions) {
-          return actions.order.capture().then(function (details) {
-            alert(
-              "Transaction completed by " + details.payer.name.given_name + "!"
-            );
-          });
-        },
+            createOrder: function (data, actions) {
+              return actions.order.create({
+                purchase_units: purchase_units,
+              });
+            },
 
-        onError: function (err) {
-          console.log(err);
-        },
-      })
-      .render("#paypal-button-container");
-  }
-  initPayPalButton();
-</script>
+            onApprove: function (data, actions) {
+              return actions.order.capture().then(function (details) {
+                alert(
+                  "Transaction completed by " +
+                    details.payer.name.given_name +
+                    "!"
+                );
+              });
+            },
+
+            onError: function (err) {
+              console.log(err);
+            },
+          })
+          .render("#paypal-button-container");
+      }
+      initPayPalButton();
+    </script>
+  </body>
+</html>
