@@ -20,7 +20,7 @@ body {
 .navbar {
 	height: 120px;
 	padding: 25px;
-  padding-top: 5px;
+	padding-top: 5px;
 	background: transparent;
 	box-shadow: 0 0 0 0;
 	background-color: transparent;
@@ -28,15 +28,17 @@ body {
 }
 
 .navbar-white {
-  background-color: #fff;
-  height: 100px;
+	background-color: #fff;
+	height: 100px;
 }
 
 .navbar img {
 	width: 250px;
 	margin-left: 30px;
 }
-
+.m-auto {
+	margin: 0 auto;
+}
 .btn-gradient {
 	color: white;
 	background: var(--green-color);
@@ -205,11 +207,10 @@ body {
 	z-index: -1;
 }
 
-
 /*small screen*/
 @media only screen and (max-width: 768px) {
 	.text-banner {
-    margin-top: 9vh;
+		margin-top: 9vh;
 	}
 	.navbar {
 		padding: 10px;
@@ -218,14 +219,14 @@ body {
 	.home-banner h1 {
 		font-size: 2.5rem;
 		margin-right: 7px;
-    margin-left: 7px;
-    margin-bottom: 35px;
+		margin-left: 7px;
+		margin-bottom: 35px;
 	}
 
 	.home-banner h3 {
-    font-size: 1.5rem;
-    margin-top: 15px;
-    margin-bottom: 40px;
+		font-size: 1.5rem;
+		margin-top: 15px;
+		margin-bottom: 40px;
 	}
 
 	.btn-gradient {
@@ -237,11 +238,11 @@ body {
 	}
 
 	.carousel-inner > .carousel-item > img {
-    height: 450px !important;
+		height: 450px !important;
 	}
 
 	.pt-10 {
-    padding-top: 5vh;
+		padding-top: 5vh;
 	}
 
 	.box {
@@ -250,11 +251,10 @@ body {
 
 	.home-banner {
 		height: 100%;
-
 	}
 	.banner-tech {
 		padding-top: 8vh;
-    padding-bottom: 8vh;
+		padding-bottom: 8vh;
 		height: 100%;
 	}
 	.description {
@@ -273,25 +273,25 @@ body {
 	.banner-tech h2 {
 		font-size: 2.5rem;
 		font-weight: 400;
-    margin-bottom: 4vh;
+		margin-bottom: 4vh;
 	}
 
 	.footer {
 		height: 15vh;
 	}
 	.small {
-    font-size: 0.8rem;
-    margin-top: 1vh;
-  }
-  .m-flex {
+		font-size: 0.8rem;
+		margin-top: 1vh;
+	}
+	.m-flex {
 		align-items: center;
-    justify-content: center;
-    display: flex;
-  }
+		justify-content: center;
+		display: flex;
+	}
 
-  .m-p0 {
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+	.m-p0 {
+		margin-top: 3vh;
+		margin-bottom: 3vh;
 	}
 
 	.m-d-block {
@@ -318,4 +318,3 @@ body {
 		left: 128px;
 	}
 }
-
