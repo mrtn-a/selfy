@@ -10,72 +10,88 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Selfy DSP Payment Page</title>
+    <link rel="stylesheet" href="paypal-style.css" />
+    <link
+      rel="icon"
+      href="https://d3jdaktv9qp9iu.cloudfront.net/uploads/whitelabels/550042834a316f7a6cd793e54e18419163bb09b6f3be5880881a3c0e7c88e37e.jpeg"
+    />
+    <title>Add Funds | Selfy DSP</title>
+    <meta
+      name="description"
+      content="Selfy DSP is a mobile DSP (mobile demand-side platform) to launch branding and performance mobile advertising campaigns on smartphones and tablets, using programmatic advertising technologies like Real-Time Bidding (RTB), with proprietary technology of bidding algorithms, retargeting and user profiling. Selfy DSP offers unique capabilities to target your audience, and optimize the performance of your campaigns."
+    />
   </head>
   <body>
     <!-- navbar -->
-    <div class="navbar">
+    <div class="header mobile-fixed">
       <div class="logo m-auto">
         <h4>
-          <a href="#">
+          <a href="https://portal.selfydsp.com/">
             <img
-              src="images/selfydsp-logo-horizontal-transparent.png"
+              src="https://d3jdaktv9qp9iu.cloudfront.net/uploads/whitelabels/e79fbcb32e3318d64a4f7840d9f94310cda867af1cc20cef725ff5e3580ff922.jpeg"
               alt="Selfy DSP"
           /></a>
         </h4>
       </div>
     </div>
 
-    <div id="smart-button-container">
-      <div style="text-align: center">
-        <label for="description">Name </label
-        ><input
-          type="text"
-          name="descriptionInput"
-          id="description"
-          maxlength="127"
-          value=""
-        />
+    <div class="content">
+      <div class="text">
+        <h1>Add funds</h1>
       </div>
-      <p
-        id="descriptionError"
-        style="visibility: hidden; color: red; text-align: center"
-      >
-        Please enter a description
-      </p>
-      <div style="text-align: center">
-        <label for="amount">Amount </label
-        ><input name="amountInput" type="number" id="amount" value="" /><span>
-          USD</span
+    </div>
+
+    <div class="wrapper">
+      <div id="smart-button-container">
+        <div style="text-align: center">
+          <label for="description">Name </label
+          ><input
+            type="text"
+            name="descriptionInput"
+            id="description"
+            maxlength="127"
+            value=""
+          />
+        </div>
+        <p
+          id="descriptionError"
+          style="visibility: hidden; color: red; text-align: center"
         >
+          Please enter a description
+        </p>
+        <div style="text-align: center">
+          <label for="amount">Amount </label
+          ><input name="amountInput" type="number" id="amount" value="" /><span>
+            USD</span
+          >
+        </div>
+        <p
+          id="priceLabelError"
+          style="visibility: hidden; color: red; text-align: center"
+        >
+          Please enter a price
+        </p>
+        <div id="invoiceidDiv" style="text-align: center; display: none">
+          <label for="invoiceid"> </label
+          ><input
+            name="invoiceid"
+            maxlength="127"
+            type="text"
+            id="invoiceid"
+            value=""
+          />
+        </div>
+        <p
+          id="invoiceidError"
+          style="visibility: hidden; color: red; text-align: center"
+        >
+          Please enter an Invoice ID
+        </p>
+        <div
+          style="text-align: center; margin-top: 0.625rem"
+          id="paypal-button-container"
+        ></div>
       </div>
-      <p
-        id="priceLabelError"
-        style="visibility: hidden; color: red; text-align: center"
-      >
-        Please enter a price
-      </p>
-      <div id="invoiceidDiv" style="text-align: center; display: none">
-        <label for="invoiceid"> </label
-        ><input
-          name="invoiceid"
-          maxlength="127"
-          type="text"
-          id="invoiceid"
-          value=""
-        />
-      </div>
-      <p
-        id="invoiceidError"
-        style="visibility: hidden; color: red; text-align: center"
-      >
-        Please enter an Invoice ID
-      </p>
-      <div
-        style="text-align: center; margin-top: 0.625rem"
-        id="paypal-button-container"
-      ></div>
     </div>
     <script
       src="https://www.paypal.com/sdk/js?client-id=AcUG4bNLusl9TeiG2CyBBo8FQvqsO8Vg8eBXAHzoW43kvseWCrgk220a7pX12pUTDMYAffGh2czwhxV9&currency=USD"
