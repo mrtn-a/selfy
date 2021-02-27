@@ -85,7 +85,17 @@
     <div class="wrapper">
       <div id="smart-button-container">
         <div style="text-align: center">
-          <label for="description">Name </label
+          <h5 class="pb-3 pt-3">Deposit funds to your Selfy DSP account</h5>
+          <p class="pb-4">
+            The minimum initial deposit amount is $200 USD. <br />
+            Deposited funds do not expire and can be used to purchase traffic at
+            any time.<br />
+            Please note your account will be credited with the amount we receive
+            after wire/Paypal fees. <br />
+          </p>
+        </div>
+        <div style="text-align: center">
+          <label for="description" class="pr-2">Name </label
           ><input
             type="text"
             name="descriptionInput"
@@ -93,25 +103,23 @@
             maxlength="127"
             value=""
           />
-        </div>
-        <p
-          id="descriptionError"
-          style="visibility: hidden; color: red; text-align: center"
-        >
-          Please enter a description
-        </p>
-        <div style="text-align: center">
-          <label for="amount">Amount </label
+          <p
+            id="descriptionError"
+            style="visibility: hidden; color: #e76330; text-align: center"
+          >
+            Please enter a description
+          </p>
+          <label for="amount" class="pr-2 pl-3">Amount </label
           ><input name="amountInput" type="number" id="amount" value="" /><span>
             USD</span
           >
+          <p
+            id="priceLabelError"
+            style="visibility: hidden; color: #e76330; text-align: center"
+          >
+            Please enter a price
+          </p>
         </div>
-        <p
-          id="priceLabelError"
-          style="visibility: hidden; color: red; text-align: center"
-        >
-          Please enter a price
-        </p>
         <div id="invoiceidDiv" style="text-align: center; display: none">
           <label for="invoiceid"> </label
           ><input
@@ -124,7 +132,7 @@
         </div>
         <p
           id="invoiceidError"
-          style="visibility: hidden; color: red; text-align: center"
+          style="visibility: hidden; color: #e76330; text-align: center"
         >
           Please enter an Invoice ID
         </p>
