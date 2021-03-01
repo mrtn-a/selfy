@@ -81,7 +81,7 @@
         <h1>Add funds</h1>
       </div>
     </div>
-
+    <!-- main container -->
     <div class="wrapper">
       <div id="smart-button-container">
         <div style="text-align: center">
@@ -94,6 +94,7 @@
             after wire/Paypal fees. <br />
           </p>
         </div>
+        <!-- PAYPAL SMART BUTTON -->
         <div style="text-align: center">
           <label for="description" class="pr-2">Name </label
           ><input
@@ -142,10 +143,13 @@
         ></div>
       </div>
     </div>
+
+    <!-- TODO: check the client-id -->
     <script
       src="https://www.paypal.com/sdk/js?client-id=AcUG4bNLusl9TeiG2CyBBo8FQvqsO8Vg8eBXAHzoW43kvseWCrgk220a7pX12pUTDMYAffGh2czwhxV9&currency=USD"
       data-sdk-integration-source="button-factory"
     ></script>
+
     <script>
       function initPayPalButton() {
         var description = document.querySelector(
@@ -261,7 +265,7 @@
       initPayPalButton();
     </script>
 
-    <!-- fill svg white on linkhover -->
+    <!-- fill svg on linkhover -->
     <script>
       const btnLink = document.getElementById("link");
       const svgEl = document.querySelectorAll("#color-change-el");
