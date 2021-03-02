@@ -146,7 +146,7 @@ body {
 		),
 		url("https://res.cloudinary.com/mrtn-a/image/upload/v1614701510/selfy-banner_xv8qrp.png");
 	width: 100%;
-	padding-bottom: 80px;
+	padding-bottom: 10vh;
 	height: 100vh;
 	background-attachment: fixed;
 	background-position: center;
@@ -202,9 +202,9 @@ body {
 }
 
 .banner-tech {
-	padding-top: 15vh;
+	padding-top: 24vh;
 	padding-bottom: 10vh;
-	height: 55vh;
+	height: 70vh;
 	background-image: linear-gradient(
 			180deg,
 			rgba(82, 88, 105, 1) 25%,
