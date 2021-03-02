@@ -35,6 +35,7 @@ body {
 .navbar-white {
 	background-color: #fff;
 	height: 100px;
+	box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.2);
 }
 
 .navbar img {
@@ -177,7 +178,7 @@ body {
 
 .home-banner h1 {
 	color: var(--grey-color);
-	font-size: 3.5rem;
+	font-size: 3.6rem;
 	margin-bottom: 30px;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -231,7 +232,7 @@ body {
 }
 
 .description {
-	height: 60vh;
+	height: 100%;
 }
 
 .description h2 {
@@ -264,6 +265,38 @@ body {
 	z-index: -1;
 }
 
+/* COUNTER */
+
+.counterup {
+	margin-top: 7vh;
+}
+.counter-box {
+	text-align: center;
+}
+
+.counter-ico {
+	margin-bottom: 1rem;
+}
+
+.counter-ico i {
+	font-size: 2rem;
+}
+
+.ico-circle {
+	line-height: 1.8;
+	border: 6px solid #6dcbb4;
+	box-shadow: 0px 3px 19px -9px rgba(0, 0, 0, 0.75);
+	border-radius: 50%;
+	padding: 25px 17px 20px 17px;
+}
+
+.counter-num .counter {
+	font-size: 2rem;
+}
+
+.counter-box {
+	margin-top: 6vh;
+}
 /*small screen*/
 @media only screen and (max-width: 768px) {
 	.text-banner {
@@ -312,7 +345,7 @@ body {
 	}
 	.banner-tech {
 		padding-top: 8vh;
-		padding-bottom: 8vh;
+		padding-bottom: 6vh;
 		height: 100%;
 	}
 	.description {
