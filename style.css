@@ -197,7 +197,7 @@ body {
 }
 
 .text-banner {
-	margin-top: 15vh;
+	margin-top: 6vh;
 }
 
 .banner-tech {
@@ -236,7 +236,7 @@ body {
 
 .description h2 {
 	color: var(--grey-color);
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 400;
 }
 
@@ -244,9 +244,9 @@ body {
 	height: 80vh;
 }
 
-.pt-10 {
-	padding-top: 10vh;
-	margin-bottom: 20vh;
+.extra-p {
+	padding-top: 20vh;
+	margin-bottom: 15vh;
 }
 
 .background-shape {
@@ -299,7 +299,7 @@ body {
 		height: 450px !important;
 	}
 
-	.pt-10 {
+	.extra-p {
 		padding-top: 5vh;
 	}
 
