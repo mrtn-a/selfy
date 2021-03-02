@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
     />
+    <script src="https://unpkg.com/vanilla-counter"></script>
 
     <link rel="stylesheet" href="style.css" />
     <title>Selfy DSP</title>
@@ -148,7 +149,78 @@
               Built with the Growth Marketer in mind. <br />Not just delivering
               ads, but finding the most valuable audience for your business.
             </h2>
-            <!-- counterup -->
+          </div>
+        </div>
+
+        <!-- counterup -->
+        <div id="description"></div>
+        <div class="col-12 counterup">
+          <div class="row">
+            <div class="col-sm-4 col-lg-4">
+              <div class="counter-box">
+                <div class="counter-ico">
+                  <span class="ico-circle"><i class="fas fa-check"></i></span>
+                </div>
+                <div class="counter-num">
+                  <p class="counter pt-4">
+                    <span
+                      data-vanilla-counter
+                      data-start-at="0"
+                      data-end-at="100"
+                      data-format="{}%"
+                      data-delay="900"
+                    >
+                      > {}
+                    </span>
+                  </p>
+                  <span class="counter-text">TRANSPARENT</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 col-lg-4 mobile-mt3">
+              <div class="counter-box">
+                <div class="counter-ico">
+                  <span class="ico-circle"><i class="fas fa-users"></i></span>
+                </div>
+                <div class="counter-num">
+                  <p class="counter pt-4">
+                    <span
+                      data-vanilla-counter
+                      data-start-at="0"
+                      data-end-at="100"
+                      data-format="{}%"
+                      data-delay="1200"
+                    >
+                      {}
+                    </span>
+                  </p>
+                  <span class="counter-text">SELF SERVICE</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 col-lg-4 mobile-mt3">
+              <div class="counter-box">
+                <div class="counter-ico">
+                  <span class="ico-circle"><i class="fas fa-globe"></i></span>
+                </div>
+                <div class="counter-num">
+                  <p class="counter pt-4">
+                    <span
+                      data-vanilla-counter
+                      data-start-at="0"
+                      data-end-at="100"
+                      data-format="{}%"
+                      data-delay="1500"
+                    >
+                      > {}
+                    </span>
+                  </p>
+                  <span class="counter-text">GLOBAL REACH</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -264,14 +336,7 @@
       });
     </script>
 
-    <script type="text/javascript">
-      document.addEventListener("DOMContentLoaded", function () {
-        window.setTimeout(
-          document.querySelector("svg").classList.add("animated"),
-          1000
-        );
-      });
-    </script>
     <!-- couterup -->
+    <script src="vanilla-counter.js"></script>
   </body>
 </html>
