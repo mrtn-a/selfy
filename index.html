@@ -42,7 +42,17 @@
               Premium Digital Marketing <br />
               Demand Side Platform
             </h1>
-            <h3>100% Self Service Platform</h3>
+            <div class="text-typed">
+              <h3 id="typed"></h3>
+            </div>
+            <div id="typed-strings">
+              <p>100% transparent</p>
+              <p>No minimum fees</p>
+              <p>100% Self Service Platform</p>
+            </div>
+
+            <br />
+
             <a
               href="https://selfydsp.aidaform.com/free-membership-registration-form"
               target="_blank"
@@ -52,7 +62,10 @@
           </div>
           <div class="col-12 col-md-4 m-flex">
             <!-- rocket svg -->
-            <img src="rocket-img.svg" class="svg">
+            <!--             <img src="rocket-img.svg" class="svg" />
+ -->
+            <!--             <img src="images/img.png" height="450px" class="svg" />
+ -->
           </div>
         </div>
       </div>
@@ -122,7 +135,7 @@
         <div class="row">
           <div class="col-12 col-md-4 m-flex">
             <!-- components/icon-grow' -->
-            <img src="grow-img.svg" class="svg">
+            <img src="grow-img.svg" class="svg" />
           </div>
           <div class="col-12 col-md-8 text-center text-banner m-p0">
             <h2>
@@ -191,7 +204,7 @@
           </div>
           <div class="col-12 col-md-4 m-flex m-flex">
             <!-- icon1' -->
-            <img src="1-img.svg" class="svg">
+            <img src="1-img.svg" class="svg" />
           </div>
         </div>
       </div>
@@ -232,7 +245,8 @@
       </div>
 
       <!-- shape -->
-      <div class="background-shape"></div>
+      <!--       <div class="background-shape"></div>
+ -->
     </div>
 
     <script src="script.js"></script>
@@ -251,6 +265,16 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+    <script>
+      var typed = new Typed("#typed", {
+        stringsElement: "#typed-strings",
+        typeSpeed: 100,
+        showCursor: false,
+      });
+    </script>
+
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function () {
         window.setTimeout(
