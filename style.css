@@ -69,6 +69,10 @@ body {
 	height: 600px !important;
 }
 
+.platform-imgs {
+	margin-top: -8rem;
+}
+
 .footer {
 	justify-content: center;
 	display: flex;
@@ -137,11 +141,12 @@ body {
 }
 
 .text-typed {
-	height: 100px;
+	height: 80px;
 	padding: 10px;
 }
+
 .home-banner {
-	height: 100vh;
+	height: 95vh;
 	text-align: center;
 	padding-top: 14vh;
 	margin-bottom: 10vh;
@@ -263,6 +268,7 @@ body {
 
 	.home-banner {
 		height: 100%;
+		background-position: left;
 	}
 
 	.carousel-inner > .carousel-item > img {
