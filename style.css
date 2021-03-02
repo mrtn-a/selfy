@@ -11,6 +11,11 @@
 	--grey-color: #52576a;
 }
 
+body,
+html {
+	height: 100%;
+}
+
 body {
 	font-family: Poppins;
 	font-weight: 300;
@@ -131,10 +136,15 @@ body {
 }
 
 .home-banner {
-	height: 80vh;
+	height: 100vh;
 	text-align: center;
 	padding-top: 15vh;
 	margin-bottom: 10vh;
+	background-image: url("bg-selfy.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .home-banner h1 {
@@ -142,7 +152,7 @@ body {
 	font-size: 3.5rem;
 	margin-bottom: 20px;
 	font-weight: 600;
-	letter-spacing: 3px;
+	letter-spacing: 0.5px;
 }
 
 .home-banner h3 {
