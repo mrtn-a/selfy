@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
     />
+    <script src="https://unpkg.com/vanilla-counter"></script>
 
     <link rel="stylesheet" href="style.css" />
     <title>Selfy DSP</title>
@@ -136,7 +137,7 @@
       </div>
 
       <!-- description 1 -->
-      <div class="container description extra-p">
+      <div class="container description extra-p" id="description">
         <div class="row">
           <div class="col-12 col-md-4 m-flex">
             <!-- components/icon-grow' -->
@@ -148,7 +149,12 @@
               Built with the Growth Marketer in mind. <br />Not just delivering
               ads, but finding the most valuable audience for your business.
             </h2>
-            <!-- counterup -->
+          </div>
+          <!-- counterup -->
+          <div class="col-12 counter-start">
+            <span data-vanilla-counter data-start-at="0" data-end-at="100">
+              {}
+            </span>
           </div>
         </div>
       </div>
@@ -264,14 +270,7 @@
       });
     </script>
 
-    <script type="text/javascript">
-      document.addEventListener("DOMContentLoaded", function () {
-        window.setTimeout(
-          document.querySelector("svg").classList.add("animated"),
-          1000
-        );
-      });
-    </script>
     <!-- couterup -->
+    <script src="vanilla-counter.js"></script>
   </body>
 </html>
