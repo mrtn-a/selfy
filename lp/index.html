@@ -40,6 +40,7 @@
       }
       gtag("js", new Date());
       gtag("config", "G-WLZ8FQ279P");
+      gtag("config", "AW-404354005");
     </script>
   </head>
   <body>
@@ -78,6 +79,7 @@
             <br />
 
             <a
+              onclick="return gtag_report_conversion('https://selfydsp.aidaform.com/free-membership-registration-form');"
               href="https://selfydsp.aidaform.com/free-membership-registration-form"
               target="_blank"
               class="btn btn-gradient"
@@ -292,6 +294,7 @@
             <h4 class="mb-5">We offer solutions tailored to meet your needs</h4>
             <div class="text-center">
               <a
+                onclick="return gtag_report_conversion('https://selfydsp.aidaform.com/free-membership-registration-form');"
                 href="https://selfydsp.aidaform.com/free-membership-registration-form"
                 target="_blank"
                 class="btn btn-gradient"
@@ -325,6 +328,21 @@
     </div>
 
     <script src="script.js"></script>
+    <!-- Event snippet for Website lead conversion page  -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != ‘undefined’) {
+            window.location = url;
+          }
+        };
+        gtag(‘event’, ‘conversion’, {
+            ‘send_to’: ‘AW-404354005/HlmvCK_igPsBENXn58AB’,
+            ‘event_callback’: callback
+        });
+        return false;
+      }
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
